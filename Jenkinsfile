@@ -29,7 +29,7 @@ pipeline {
 		stage('Push to Docker Hub') {
             steps {
                 script {
-			sh "docker login -u cssp007143 -p Pandey@2020
+			sh "docker login -u cssp007143 -p Pandey@2020"
                         sh "docker push cssp007143/my-site:${build_number}"
                 }
             }
